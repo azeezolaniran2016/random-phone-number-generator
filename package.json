@@ -1,0 +1,25 @@
+{
+  "name": "random-phone-number-generator",
+  "version": "1.0.0",
+  "description": "A random phone number generator which generates 10 digits phone numbers which are unique on every run",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azeezolaniran2016/random-phone-number-generator.git"
+  },
+  "keywords": [
+    "random",
+    "phone",
+    "number",
+    "generator"
+  ],
+  "author": "Azeez Olaniran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azeezolaniran2016/random-phone-number-generator/issues"
+  },
+  "homepage": "https://github.com/azeezolaniran2016/random-phone-number-generator#readme"
+}
