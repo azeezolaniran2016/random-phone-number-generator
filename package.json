@@ -4,7 +4,9 @@
   "description": "A random phone number generator which generates 10 digits phone numbers which are unique on every run",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'test/**/*.spec.js'",
+    "coverage": "rm -rf coverage/ && istanbul cover _mocha -- -R spec test/**/*.spec.js",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/azeezolaniran2016/random-phone-number-generator/issues"
   },
-  "homepage": "https://github.com/azeezolaniran2016/random-phone-number-generator#readme"
+  "homepage": "https://github.com/azeezolaniran2016/random-phone-number-generator#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.4"
+  }
 }
