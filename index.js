@@ -42,7 +42,8 @@ program
   .option('-s, --sort [sort]', `Order to sort records - ${SORT_ASC} or ${SORT_DESC}. Defaults to unsorted.`)
   .option('-t, --total [total]', `Total number of records to be generated. Defaults to ${DEFAULT_GENERATOR_SIZE}`)
   .alias('g')
-  .description('Get contact')
+  .description(`Generates x number of random mobile numbers specified by the <--total> option.
+                generated numbers are unique relative to all numbers generated and persisted by this program`)
   .action(({sort, total}) =>{
     const store = repo.getStore()
     const calcSize = (
